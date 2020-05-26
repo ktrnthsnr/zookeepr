@@ -6,6 +6,9 @@ const { animals } = require('./data/animals');
 // -- instantiate an Express server
 const app = express();
 
+// -- Heroku requires port 80, set the environment variable process.env.PORT
+const PORT = process.env.PORT || 3001;
+
 // -- functions -----  (place above ,get()) )
 
 
@@ -92,9 +95,15 @@ app.get('/api/animals', (req, res) => {
     //       });
 
 // -- listen for requests, set the port, chain listen() method onto the server
-app.listen(3001, () => {
-    console.log(`API server now on port 3001!`);
-  });
+
+// -- Listener, located at the end of the file; listens for requests; listen() method of the server or app object
+app.listen(PORT, () => {
+  console.log(`API server now on port ${PORT}!`);
+});
+
+// app.listen(3001, () => {
+//     console.log(`API server now on port 3001!`);
+//   });
 
 // -- How to test and run step by step:
 // -----------------------------------------
@@ -102,4 +111,6 @@ app.listen(3001, () => {
 // -- successful response: (API server now on port 3001!) in the console.
 // -- 2. after adding JSON route, start again
 // -- successful response here: http://localhost:3001/api/animals 
+// -- 3. test the filterByQuery method in the browser
+// -- http://localhost:3001/api/animals?personalityTraits=hungry&personalityTraits=zany
 
