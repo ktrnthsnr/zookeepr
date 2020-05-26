@@ -27,7 +27,7 @@ The exercise focuses on the connection from a server within the Express.js frame
 - If you need to re-add the dependencies, run $ npm install
 - Create a .gitignore file in the root and add node_modules to this file
 - To deploy, first create a Heroku account and then install the CLI https://devcenter.heroku.com/articles/heroku-cli
-- Create a new app by entering, $ heroku create
+- Create a new Heroku application by entering, $ heroku create
 
 ## Usage
 - To view the application locally before deploying, type in the terminal $ npm start
