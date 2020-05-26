@@ -9,17 +9,29 @@ https://ktrnthsnr.github.io/zookeepr
 ## Table of Contents
 * [Description](#description)
 * [Installations](#installations)
+* [Usage](#usage)
 * [Technology](#technology)
 * [Contribution](#contribution)
 
 ## Description
-Deploying with Heroku, the exercise focuses on the connection from a server within the Express.js framework to a front-end application already created by a local zoo.
+The exercise focuses on the connection from a server within the Express.js framework to a front-end application already created by a local zoo. Heroku will be used to deploy the server to a live URL.
 
 ## Installations
-- This build before deployment to the live URL, included:
-- Installation of VSCode and Node.js, $ npm init
-- Installation of Express.js, $ npm install express --save
-- Then created a .gitignore file in the root and added node_modules to this file
+- If cloning to your repository, to setup, follow these instructions:
+- Prereq: install VSCode, Node.js
+- After cloning the GitHub repo to your local drive, run the following in the VSCode terminal command-line
+- Install npm
+- $ npm init -y
+- Install Express.js
+- $ npm install express --save or $ npm i express
+- If you need to re-add the dependencies, run $ npm install
+- Create a .gitignore file in the root and add node_modules to this file
+- To deploy, first create a Heroku account and then install the CLI https://devcenter.heroku.com/articles/heroku-cli
+- Create a new app by entering, $ heroku create
+
+## Usage
+- To view the application locally before deploying, type in the terminal $ npm start
+- Open a browser to http://localhost:3001/
 
 ## Technology
 Node, JavaScript, ES6, HTML, CSS, npm, Express.js, Heroku
