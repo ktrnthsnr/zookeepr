@@ -3,8 +3,8 @@
 ## GitHub repository
 https://github.com/ktrnthsnr/zookeepr
 
-## Website URL
-https://ktrnthsnr.github.io/zookeepr
+## Heroku URL
+https://ktrnthsnr-zookeeper.herokuapp.com/
 
 ## Table of Contents
 * [Description](#description)
