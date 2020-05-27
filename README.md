@@ -34,7 +34,7 @@ The exercise focuses on the connection from a server within the Express.js frame
 - Open a browser to http://localhost:3001/
 
 ## Technology
-Node, JavaScript, ES6, HTML, CSS, npm, Express.js, Heroku
+Node, JavaScript, ES6, HTML, CSS, npm, Express.js, Heroku, Insomnia
 
 ## Contribution
 ktrnthsnr
