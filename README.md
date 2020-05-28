@@ -10,6 +10,7 @@ https://ktrnthsnr-zookeeper.herokuapp.com/
 * [Description](#description)
 * [Installations](#installations)
 * [Usage](#usage)
+* [Test](#test)
 * [Technology](#technology)
 * [Contribution](#contribution)
 
@@ -35,8 +36,14 @@ The exercise focuses on the connection from a server within the Express.js frame
 - Heroku site location: https://ktrnthsnr-zookeeper.herokuapp.com/
 - Heroku JSON location: https://ktrnthsnr-zookeeper.herokuapp.com/api/animals
 
+## Test
+- Install npm Jest, more info https://jestjs.io
+- $ npm install --save-dev jest
+- Update package.json from "test": "test" to "test": "jest" 
+- test by running $ npm test
+
 ## Technology
-Node, JavaScript, ES6, HTML, CSS, npm, Express.js, Heroku, Insomnia
+Node, JavaScript, ES6, HTML, CSS, npm, Express.js, Heroku CLI, Insomnia, npm Jest
 
 ## Contribution
 ktrnthsnr
