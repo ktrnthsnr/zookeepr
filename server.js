@@ -95,39 +95,6 @@ function validateAnimal(animal) {
   }
   return true;
 }
-
-// -- prev
-      // function createNewAnimal(body, animalsArray) {
-      //   const animal = body;
-      //   animalsArray.push(animal);
-
-      //   return animal;
-      // }
-
-// -- previous 
-      // function createNewAnimal(body, animalsArray) {
-      //   console.log(body);
-      //   // our function's main code will go here!
-      //   // return finished code to post route for response
-      //   return body;
-      // }
-
-    // // -- previous
-
-    // function filterByQuery(query, animalsArray) {
-    //   let filteredResults = animalsArray;
-    //   if (query.diet) {
-    //     filteredResults = filteredResults.filter(animal => animal.diet === query.diet);
-    //   }
-    //   if (query.species) {
-    //     filteredResults = filteredResults.filter(animal => animal.species === query.species);
-    //   }
-    //   if (query.name) {
-    //     filteredResults = filteredResults.filter(animal => animal.name === query.name);
-    //   }
-    //   return filteredResults;
-    // }
-
 // -- add a route (before listen) -- //
 
       // -- GET requests
@@ -148,9 +115,18 @@ app.get('/api/animals/:id', (req, res) => {
   }
 });
 
+app.get('/animals', (req, res) => {
+  res.sendFile(path.join(__dirname, './public/animals.html'));
+});
+
+app.get('/zookeepers', (req, res) => {
+  res.sendFile(path.join(__dirname, './public/zookeepers.html'));
+});
+
 app.get('/', (req, res) => {
   res.sendFile(path.join(__dirname, './public/index.html'));
 });
+
 
       // -- POST requests
 app.post('/api/animals', (req, res) => {

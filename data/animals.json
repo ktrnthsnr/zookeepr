@@ -153,6 +153,16 @@
         "loving"
       ],
       "id": "15"
+    },
+    {
+      "name": "Lynx",
+      "species": "Canada lynx",
+      "diet": "carnivore",
+      "personalityTraits": [
+        "hungry",
+        "loving"
+      ],
+      "id": "16"
     }
   ]
 }

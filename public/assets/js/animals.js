@@ -31,6 +31,19 @@ const getAnimals = (formData = {}) => {
 
   console.log(queryUrl);
 
+  // [kt] added this to fetch JSON data
+  fetch(queryUrl)
+  .then(response => {
+    if (!response.ok) {
+      return alert('Error: ' + response.statusText);
+    }
+    return response.json();
+  })
+  .then(animalData => {
+    console.log(animalData);
+    printResults(animalData);
+  });
+
 };
 
 const handleGetAnimalsSubmit = event => {

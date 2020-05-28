@@ -32,6 +32,8 @@ The exercise focuses on the connection from a server within the Express.js frame
 ## Usage
 - To view the application locally before deploying, type in the terminal $ npm start
 - Open a browser to http://localhost:3001/
+- Heroku site location: https://ktrnthsnr-zookeeper.herokuapp.com/
+- Heroku JSON location: https://ktrnthsnr-zookeeper.herokuapp.com/api/animals
 
 ## Technology
 Node, JavaScript, ES6, HTML, CSS, npm, Express.js, Heroku, Insomnia
