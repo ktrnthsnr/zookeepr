@@ -13,6 +13,9 @@ const app = express();
 app.use(express.urlencoded({ extended: true }));
 // -- parse incoming JSON data
 app.use(express.json());
+// -- add middleware so the index.html can access the CSS and script.js
+app.use(express.static('public'));
+
 
 // -- Heroku requires port 80, set the environment variable process.env.PORT
 const PORT = process.env.PORT || 3001;
